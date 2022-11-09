@@ -34,4 +34,5 @@ do
     else
         echo "That is not a suitable answer"
     fi
+python3 run_arbalign.py
 done   
