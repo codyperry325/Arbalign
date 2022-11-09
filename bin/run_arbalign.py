@@ -7,16 +7,16 @@ import arbalign
 SSdimers = []
 length = 0
 
-Z = 4
+Z = PPPPP
 job = 'dimer' #dimer pair -> product or monomer -> product
 packing_start = [xxx,yyy,zzz] #SUpercell packing for monomer pair start
-ciffile = genDimers.ReadData('*.cif')
-product = 'gas.xyz'
-fname = 'FIgas.xyz'
+ciffile = genDimers.ReadData('CIFFF')
+product = 'NNN'
+fname = 'FINN'
 reactant_path = os.path.join(os.getcwd(),fname)
 
 cifdata = ciffile.cif()
-supercell_set = genDimers.Setup(cifdata,Z,job=job,dim=[xxx,yyy,zzz],fname=fname)
+supercell_set = genDimers.Setup(cifdata,Z,job=job,dim=[2,2,2],fname=fname)
 SSdata = supercell_set.supercell()
 lattparams = cifdata[1]
 monB = read(product)

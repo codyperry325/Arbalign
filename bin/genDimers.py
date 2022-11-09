@@ -212,7 +212,7 @@ class Setup():
                 line[0] = 32.06
                 newcoords.append(line)
             elif line[0] == 'F':
-                line[0] = 19.
+                line[0] = 19.00
                 newcoords.append(line)
             else:
                 print('ATOM NOT CODED YET --',line[0])
